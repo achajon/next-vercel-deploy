@@ -1,0 +1,41 @@
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700);
+
+// Custom colors
+$blue: #0784e9;
+// $green: #2cb43a;
+$body-color: #303030;
+$bullseye-red-color: #c50518 !default;
+$link-color: $bullseye-red-color;
+$bullseye-danger: #c50518;
+$bullseye-success: #0da108;
+$bullseye-warning: #ffc107;
+
+// Bootstrap
+// Bootstrap - required
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+$font-family-base: "Roboto", "Open Sans", sans-serif;
+$enable-responsive-font-sizes: true;
+$font-size-base: 1rem;
+
+@include media-breakpoint-down(md) {
+  .bl-no-gutter-sm {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .container,
+  .container-fluid,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

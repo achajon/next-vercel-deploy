@@ -1,0 +1,25 @@
+@baseUrl = https://ws.bullseyelocations.com
+@clientId = 8405
+@apikey = 32b56d11-bdc6-4441-b03f-39444654b15b
+
+GET {{baseUrl}}/RestSearch.svc/DoSearch2
+?distanceUnit=mi
+&latitude=40.497604&longitude=-74.48848679999999
+&radius=200&loading=false
+&ready=true
+&countryId=1
+&city=Franklin%20Township&state=NJ
+&internetOnlySearch=false
+&findNearestForNoResults=true
+&returnEvent=false
+&returnCoupon=false
+&pageSize=1000
+&getHoursForUpcomingWeek=true
+&startIndex=0&languageCode=en
+&InterfaceID=24850
+&fillAttr=false
+&ClientId={{clientId}}
+&ApiKey={{apikey}} HTTP/1.1
+User-Agent: rest-client
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6,zh-CN;q=0.4
+Content-Type: application/json
